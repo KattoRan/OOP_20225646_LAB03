@@ -68,4 +68,19 @@ public class DigitalVideoDisc {
 		// TODO Auto-generated method stub
 		this.title = title;
 	}
+	
+	public int getId() {
+        return id;
+    }
+
+    // toString method for a readable representation of a DigitalVideoDisc object
+    @Override
+    public String toString() {
+        return "DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + String.format("%.2f", cost) + " $";
+    }
+
+    // Method to check if the DVD title matches a given string
+    public boolean isMatch(String title) {
+        return this.title.toLowerCase().contains(title.toLowerCase());
+    }
 }
