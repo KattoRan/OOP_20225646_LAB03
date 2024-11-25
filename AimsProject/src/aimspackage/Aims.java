@@ -23,5 +23,7 @@ public class Aims {
 		anOrder.removeDigitalVideoDisc(dvd2);   //Remove dvd2 (successfully remove)
 		anOrder.removeDigitalVideoDisc(dvd4);   //Remove dvd4 (not in the current cart)
 		anOrder.removeDigitalVideoDisc(dvd3);   //Remove dvd3 (successfully remove)
+		
+		anOrder.printCart();
 	}
 }
