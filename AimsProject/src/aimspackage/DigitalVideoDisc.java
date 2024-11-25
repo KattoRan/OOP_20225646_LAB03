@@ -56,4 +56,8 @@ public class DigitalVideoDisc {
 		System.out.println("Cost: " + this.cost);
 		System.out.println();
 	}
+	public void setTitle(String title) {
+		// TODO Auto-generated method stub
+		this.title = title;
+	}
 }
