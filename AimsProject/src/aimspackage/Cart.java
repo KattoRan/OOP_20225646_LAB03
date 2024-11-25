@@ -18,7 +18,17 @@ public class Cart {
 			System.out.println();
 		}
 	}
-	
+	// New overloaded method to add an array of DVDs
+    /*public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        for (DigitalVideoDisc dvd : dvdList) {
+            addDigitalVideoDisc(dvd);  // Use the existing single-DVD method
+        }
+    }*/
+	public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+        for (DigitalVideoDisc dvd : dvds) {
+            addDigitalVideoDisc(dvd);  // Use the existing single-DVD method
+        }
+    }
 	public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
 		int index = -1;
 		if(this.qtyOrdered < 0) {
